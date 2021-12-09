@@ -26,7 +26,7 @@ export const SearchContainer = styled.div`
 border: 1px solid lightgrey;
 display: flex;
 align-items: center;
-padding-left: 5px;
+padding-left: 6px;
 margin-left: 25px;
 
 `
