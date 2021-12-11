@@ -10,15 +10,15 @@ const Navbar = () => {
         <Container>
         <Wrapper >
             <Left>
-               <Language>EN</Language>
+               <Logo> Fidela </Logo>
+            </Left>
+            <Center>
+                
+              <Language>EN</Language>
                <SearchContainer>
                    <Input />
                    <Search style={{ color: "grey", fontSize: "18px"}}/>
                </SearchContainer>
-            </Left>
-            <Center>
-                <Logo> Fidela </Logo>
-
             </Center>
             <Right>
              <MenuItems>

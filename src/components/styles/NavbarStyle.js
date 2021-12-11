@@ -43,6 +43,7 @@ export const Center = styled.div`
 export const Logo = styled.h1`
  text-align: center;
  font-weight: bold;
+ color: #fe3f3f;
 `
 
 export const Right = styled.div`

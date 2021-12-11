@@ -27,10 +27,12 @@ right: ${props => props.direction === "right" && "10px"};
 margin: auto;
 cursor: pointer;
 transition: .3s ease;
+opacity: 0.5;
 
 &:hover{
     background-color:#e4e4e42a;
-    padding: 12px
+    transform: scale(1.1);
+    opacity: 1;
 }
 `
 export const Wrapper = styled.div`
@@ -79,6 +81,7 @@ transition: fadeIn .3s ease;
 `
 export const ImgContainer = styled.div`
 height: 100%;
+width: 100%;
 flex: 1;
 display: flex;
 align-items: center;

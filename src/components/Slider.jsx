@@ -23,7 +23,7 @@ const Slider = () => {
       }
    }, [current, length])
 
-  if(!Array.isArray(slideItem) || Slideshow.length <= 0) {
+  if(!Array.isArray(slideItem) || slideItem.length <= 0) {
     return null;
   }  
     const nextSlide = () => {
