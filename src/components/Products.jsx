@@ -5,10 +5,13 @@ import Product from './Product';
 
 import { Container, Wrapper, Title } from './styles/ProductStyle'
 
-const Products = () => {
+const Products = ({simple}) => {
+    
     return (
        <Container>
+           { !simple &&
            <Title fill="black">Popular Products </Title>
+            }
             <Wrapper>
                 {
                     popularProducts.map((item) => (
