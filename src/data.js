@@ -2,6 +2,20 @@ import img1 from './assets/images/img2.jpg';
 import img2 from './assets/images/img1.jpg';
 import img3 from './assets/images/img3.jpg';
 import img4 from './assets/images/img4.jpg';
+import prod1 from './assets/images/prod1.png';
+import prod2 from './assets/images/prod2.png';
+import prod3 from './assets/images/prod3.png';
+import prod4 from './assets/images/prod4.png';
+import prod5 from './assets/images/prod5.png';
+import prod6 from './assets/images/prod6.png';
+import prod7 from './assets/images/prod7.png';
+import prod8 from './assets/images/prod8.png';
+
+
+
+
+
+
 
 
 
@@ -81,35 +95,43 @@ export const categories = [
 export const popularProducts = [
     {
         id: 1,
-        image: img1,
+        // image: "https://www.transparentpng.com/thumb/shirt/9ILIbd-pink-t-shirt-vector.png",
+        image: prod1,
     },
     {
         id: 2,
-        image: img2,
+        image: prod2,
+        // image: "https://www.transparentpng.com/thumb/adidas/9YoCMX-adidas-shoe-clipart-hd.png",
     },
     {
         id: 3,
-        image: img3,
+        image: prod3,
+        // image: "https://www.transparentpng.com/thumb/thug-life-meme/5xLgBU-thug-life-meme-png-icon.png",
     },
     {
         id: 4,
-        image: img4,
+        image: prod4,
+        // image: "https://www.transparentpng.com/thumb/adidas/juvpd8-adidas-shoe-simple.png",
     },
     {
         id: 5,
-        image: img1,
+        image: prod5,
+        // image: "https://www.transparentpng.com/thumb/iphone/RzdIQp--black-iphone-color-wallpaper-transparent-phone-wallpapers-phone-cases.png",
     },
     {
         id: 6,
-        image: img3,
+        image: prod6,
+        // image: "https://www.transparentpng.com/thumb/-iphone-x/dO1Aqf-apple-iphone-caracteru-edsticas-especificaciones.png",
     },
     {
         id: 7,
-        image: img4,
+        image: prod7,
+        // image: "https://www.transparentpng.com/thumb/perfume/XKGeRQ-perfume-chanel.png",
     },
      {
         id: 8,
-        image: img1,
+        image: prod8,
+        // image: "https://www.transparentpng.com/thumb/watch/yBzv8m-classic-watch-hd-images-.png",
     }
 
 ]
