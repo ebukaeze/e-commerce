@@ -5,7 +5,9 @@ import React from 'react';
 
 import { Container, Wrapper, Left, Center, Right, Language, SearchContainer, Input, Logo, MenuItems } from './styles/NavbarStyle';
 
-const Navbar = () => {
+
+const Navbar = (simple) => {
+
     return (
         <Container>
         <Wrapper >
@@ -13,12 +15,21 @@ const Navbar = () => {
                <Logo> Fidela </Logo>
             </Left>
             <Center>
-                
+
+                {(() => {if(!simple){
+                    return(
+                        <>
               <Language>EN</Language>
                <SearchContainer>
                    <Input />
-                   <Search style={{ color: "grey", fontSize: "18px"}}/>
+                   <Search style={{ color: "grey", fontSize: "24px", fontWeight: "800", cursor: "pointer"}}/>
                </SearchContainer>
+                       </>
+                    )
+                } })()}
+              
+        
+
             </Center>
             <Right>
              <MenuItems>

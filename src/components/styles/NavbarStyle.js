@@ -24,14 +24,27 @@ export const Language = styled.span`
 `
 export const SearchContainer = styled.div`
 border: 1px solid lightgrey;
+width: 60%;
 display: flex;
+height: 35px;
 align-items: center;
-padding-left: 6px;
+padding: 2px 3px;
 margin-left: 25px;
+border-radius: 10px;
+box-shadow: 1px 0px 3px rgba(0,0,0,0.1);
+
 
 `
 export const Input = styled.input`
  border: none;
+ flex:6;
+ height: inherit;
+
+ &:focus{
+   color: transparent;
+   border: 2px solid transparent;
+   background-color: transparent;
+ }
 `
 
 export const Center = styled.div`
