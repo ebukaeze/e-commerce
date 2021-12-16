@@ -5,7 +5,9 @@ import React from 'react';
 
 import { Container, Wrapper, Left, Center, Right, Language, SearchContainer, Input, Logo, MenuItems } from './styles/NavbarStyle';
 
+
 const Navbar = (simple) => {
+
     return (
         <Container>
         <Wrapper >
@@ -13,6 +15,7 @@ const Navbar = (simple) => {
                <Logo> Fidela </Logo>
             </Left>
             <Center>
+
                 {(() => {if(!simple){
                     return(
                         <>
@@ -26,6 +29,7 @@ const Navbar = (simple) => {
                 } })()}
               
         
+
             </Center>
             <Right>
              <MenuItems>

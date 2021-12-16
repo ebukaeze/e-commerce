@@ -33,6 +33,7 @@ margin-left: 25px;
 border-radius: 10px;
 box-shadow: 1px 0px 3px rgba(0,0,0,0.1);
 
+
 `
 export const Input = styled.input`
  border: none;
