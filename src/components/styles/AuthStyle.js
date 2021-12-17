@@ -1,25 +1,33 @@
 import styled from "styled-components";
-
+import img4 from '../../assets/images/img4.jpg';
 
 export const Container = styled.div`
 width: 100%;
 height: 100vh;
+background: linear-gradient(rgba(255, 255, 255,0.3), rgba(255, 34, 34,0.2)), url(${img4});
+background-size: cover;
+background-position: center center;
+background-color: #fecc2d2a;
+
 
 
 `
 export const Wrapper = styled.div`
-width: 90%;
+width: 100%;
 max-width: 1640px;
+height: calc(100vh - 80px);
 margin: 0 auto;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+
 `
 export const Title = styled.h1`
 font-size: 24px;
 font-weight: 600;
 margin-bottom: 28px;
+color: #000;
 `
 
 export const Form = styled.form`
@@ -33,7 +41,9 @@ justify-content: center;
 flex-direction: column;
 padding: 20px 10px;
 
-
+@media screen and (max-width: 765px){
+  width: 80%;
+}
 `
 
 export const Input = styled.input`
@@ -45,6 +55,7 @@ height: 30px;
 width: 90%;
 padding: 4px 4px;
 margin-top: 25px;
+//color: #c4c4c4;
 
 
 
