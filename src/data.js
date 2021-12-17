@@ -48,7 +48,7 @@ export const slideItem = [
 
     },
     {
-        id: 2,
+        id: 4,
         title: "Summer wears",
         desc: "Get the best ouftits for this summer",
         image: img4,
