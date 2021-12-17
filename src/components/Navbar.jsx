@@ -6,7 +6,7 @@ import React from 'react';
 import { Container, Wrapper, Left, Center, Right, Language, SearchContainer, Input, Logo, MenuItems } from './styles/NavbarStyle';
 
 
-const Navbar = (simple) => {
+const Navbar = ({simple}) => {
 
     return (
         <Container>
@@ -15,27 +15,21 @@ const Navbar = (simple) => {
                <Logo> Fidela </Logo>
             </Left>
             <Center>
-
-                {(() => {if(!simple){
-                    return(
+               {!simple && (    
                         <>
               <Language>EN</Language>
                <SearchContainer>
-                   <Input />
+                   <Input placeholder='Search'/>
                    <Search style={{ color: "grey", fontSize: "24px", fontWeight: "800", cursor: "pointer"}}/>
                </SearchContainer>
                        </>
-                    )
-                } })()}
-              
-        
-
+                       )}
             </Center>
             <Right>
              <MenuItems>
              REGISTER
              </MenuItems>
-             <MenuItems> SIGN IN</MenuItems>
+             <MenuItems> LOGIN</MenuItems>
              <MenuItems> 
              <Badge badgeContent={4} color="primary">
                  <ShoppingCartOutlined />
