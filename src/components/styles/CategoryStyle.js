@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { mobile } from "./Responsive";
 
 
 export const Container = styled.div`
@@ -27,6 +28,7 @@ padding: 10px 0;
   grid-template-columns: repeat(5, minmax(175px, 1fr));
 
 }
+${mobile({display: "flex", alignItems: "center"})};
 `
 export const Container2 = styled.div`
   display: flex;
@@ -65,6 +67,8 @@ export const Container2 = styled.div`
 
     &:hover{
               background-color: transparent;
+    }
+    ${mobile({padding: "0px"})};
 `
 export const Image = styled.img`
 object-fit: cover;
@@ -73,7 +77,7 @@ display: flex;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 
-
+${mobile({width: "200px", borderRadius: "4px"})};
 `
 export const Info = styled.div`
 padding: 5px 8px;
@@ -117,4 +121,5 @@ transition: .3s ease-out;
   font-size: 13px;
   font-weight: 300;
 }
+${mobile({fontSize: "16px", fontWeight: "200", padding: "5px"})};
 `

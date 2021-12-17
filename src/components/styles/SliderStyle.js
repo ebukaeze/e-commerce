@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "./Responsive";
 
 
 export const Container = styled.div`
@@ -8,6 +9,8 @@ max-height: 1100px;
 display: flex;
 position: relative;
 overflow: hidden;
+
+${mobile({height: "94vh"})};
 `
 export const Arrow = styled.div`
 width: max-content;
@@ -34,6 +37,7 @@ opacity: 0.5;
     transform: scale(1.1);
     opacity: 1;
 }
+${mobile({opacity: "0.3"})};
 `
 export const Wrapper = styled.div`
 height: 100%;
@@ -132,6 +136,8 @@ justify-content: end;
 padding-left: 100px;
 z-index: 4000;
 transition: .3s ease;
+
+${mobile({textAlign: "left", width: "100%", paddingLeft: "30px"})};
 `
 
 export const Title = styled.h1`
@@ -144,12 +150,14 @@ text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 `
 export const Desc = styled.p`
 msrgin: 50px 0px;
-font-fsmily: sans-serif;
+font-family: sans-serif;
 font-size: 20px;
 font-weight: 500;
 letter-spacing: 2px;
 color: #fff;
 text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+
+${mobile({fontSize: "18px", fontWeight: "300", letterSpacing: "0px"})};
 
 `
 export const Button = styled.button`
@@ -167,4 +175,5 @@ transition: .3s ease-out;
 &:hover{
     background-color: transparent;
 }
+${mobile({padding: "5px", fontSize: "18px", fontWeight: "200", display: "flex", alignItems: "center"})};
 `

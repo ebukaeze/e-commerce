@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import img4 from '../../assets/images/img4.jpg';
+import { mobile } from "./Responsive";
 
 export const Container = styled.div`
 width: 100%;
@@ -28,6 +29,8 @@ font-size: 24px;
 font-weight: 600;
 margin-bottom: 28px;
 color: #000;
+
+${mobile({fontSize: "18px", fontWeight: "400", marginBottom: "10px", lineHeight: "10px"})};
 `
 
 export const Form = styled.form`
@@ -43,6 +46,7 @@ padding: 20px 10px;
 
 @media screen and (max-width: 765px){
   width: 80%;
+  padding: 8px 4px;
 }
 `
 
@@ -57,7 +61,7 @@ padding: 4px 4px;
 margin-top: 25px;
 //color: #c4c4c4;
 
-
+${mobile({padding: "2px", marginTop: "15px"})};
 
 &:focus{
     outline: none;
@@ -84,7 +88,7 @@ export const Button = styled.button`
 export const Agreement = styled.p`
 font-size: 12px;
 color: #757575;
-margin-top: 25px;
+margin-top: 15px;
 `
 export const Em = styled.em`
 color: #4b4b4b;

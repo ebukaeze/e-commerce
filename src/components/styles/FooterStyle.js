@@ -1,10 +1,13 @@
 import styled from "styled-components";
+import { mobile } from "./Responsive";
 
 
 export const Container = styled.div`
 width: 90%;
 max-width: 1620px;
 margin: 0 auto;
+
+
 `
 
 export const Wrapper = styled.div`
@@ -12,6 +15,7 @@ width: 100%;
 display: flex;
 align-items: center;
 
+${mobile({flexDirection: "column"})};
 `
 
 export const Left = styled.div`
@@ -48,6 +52,8 @@ cursor: pointer;
 export const Center = styled.div`
 flex: 1;
 padding: 20px;
+
+${mobile({display: "none"})};
 `
 export const TitleMd = styled.h3`
 
@@ -74,6 +80,8 @@ margin-top: 8px;
 export const Right = styled.div`
 flex: 1;
 padding: 20px;
+
+${mobile({backgroundColor: "#f7f7f7", padding: "10px"})};
 `
 export const ContactItem = styled.div`
 display: flex;

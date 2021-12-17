@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "./Responsive";
 
 
 export const Container = styled.div`
@@ -36,6 +37,8 @@ border: ${props => props.color === "black" && "none"};
 `
 export const TopTexts = styled.div`
 
+${mobile({display: "none"})};
+
 `
 export const TopText = styled.span`
 text-decoration: underline;
@@ -48,6 +51,9 @@ display: flex;
 //align-items: center;
 justify-content: space-between;
 margin-top: 2rem;
+
+${mobile({flexDirection: "column"})};
+
 `
 
 export const Info = styled.div`
@@ -58,6 +64,9 @@ export const Product = styled.div`
 display: flex;
 justify-content: space-between;
 
+${mobile({flexDirection: "column"})};
+
+
 `
 export const ProductDetails = styled.div`
 flex: 2;
@@ -66,6 +75,8 @@ display: flex;
 `
 export const Image = styled.img`
 width: 230px;
+
+${mobile({width: "200px"})};
 
 `
 export const Details = styled.div`
@@ -111,10 +122,14 @@ export const ProductAmount = styled.div`
 font-size: 24px;
 margin: 5px;
 
+${mobile({margin: "5px 15px"})};
+
 `
 export const ProductPrice = styled.div`
 font-size: 30px;
 font-weight: 200;
+
+${mobile({marginBottom: "20px"})};
 
 `
 export const Hr = styled.hr`
