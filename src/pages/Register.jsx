@@ -12,13 +12,15 @@ const Register = () => {
         <Container>
             <Navbar simple/>
             <Wrapper>
-                <Title>CREATE AN ACCOUNT</Title>
+                
                 <Form>
+                    <Title>CREATE AN ACCOUNT</Title>
                  <Input placeholder='first name'/>
                  <Input placeholder='last name'/>
                  <Input placeholder='username'/>
                  <Input type={"email"} placeholder='email'/>
                  <Input type="password" placeholder='password'/>
+                 <Input type="password" placeholder='confirm password'/>
                  <Agreement>By signing up you agree to our terms and <Em>privacy</Em> policies</Agreement>
                  <Button onClick={handleSubmit}>CREATE ACCOUNT</Button>
                 </Form>
